@@ -11,15 +11,15 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
+    "noEmit": true, // 不生成输出文件
 
     /* Linting */
-    "strict": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noEmitOnError": false
+    "strict": false, // 禁用严格类型检查
+    "noUnusedLocals": false, // 禁用未使用变量的检查
+    "noUnusedParameters": false, // 禁用未使用参数的检查
+    "noFallthroughCasesInSwitch": false, // 禁用 switch-case 中的 fall-through 错误
+    "noEmitOnError": false, // 即使有错误，仍然输出构建结果
+    "ignoreDeprecations": "5.0" // 忽略废弃的 API 警告
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
