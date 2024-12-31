@@ -16,7 +16,7 @@ import { erc20Abi, optimismPortalAbi } from "./abi";
 
 import type { PublicL1ClientWithChain, PublicL2ClientWithChain } from "./types";
 import { chainConfig, publicActionsL1, publicActionsL2 } from "viem/op-stack";
-
+sepolia.rpcUrls.default.http = ['https://rpc.ankr.com/eth_sepolia']
 const getChain = (chainId: number) => {
   const supportedChains = [
     mainnet,

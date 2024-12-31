@@ -157,7 +157,7 @@ function App() {
       <div className="flex flex-col justify-between bg-base text-foreground min-h-svh">
         <div className="flex flex-col gap-6">
           <div className="flex flex-row justify-between lg:pt-6 lg:px-6 lg:pb-6 pt-4 px-4">
-            <img src={logoUrl} alt="logo" width={40} height={40} />
+            <img src={logoUrl} alt="logo" width={40} height={40} className="rounded-full" />
             <ConnectButton showBalance={false} />
           </div>
           <div className="flex flex-col gap-4 text-foreground">

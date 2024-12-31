@@ -47,7 +47,6 @@ export const useCurrentChainBalance = () => {
   const queryClient = useQueryClient();
   const { isParentChain } = useIsParentChain();
   const account = useAccount();
-
   const config =
     isParentChain && isCustomGasToken() ? { token: token.address } : {};
 
@@ -56,7 +55,6 @@ export const useCurrentChainBalance = () => {
     ...config,
     address: account.address,
   });
-
   useEffect(() => {
     queryClient.invalidateQueries({ queryKey });
   }, [blockNumber, queryClient, queryKey]);
